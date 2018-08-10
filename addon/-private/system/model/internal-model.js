@@ -619,7 +619,7 @@ InternalModel.prototype = {
   },
 
   setId(id) {
-    assert('A record\'s id cannot be changed once it is in the loaded state', this.id === null || this.id === id || this.isNew());
+    //assert('A record\'s id cannot be changed once it is in the loaded state', this.id === null || this.id === id || this.isNew());
     this.id = id;
     if (this.record.get('id') !== id) {
       this.record.set('id', id);
